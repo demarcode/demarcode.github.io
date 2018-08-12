@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+ <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="#"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-113352863-1');
+</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Moms Can: Code Virtual Summit II, Lifelong Learning.">
+    <meta name="author" content="Moms Can: Code, Virtual Summit II, Lifelong Learning">
+     <title>Lifelong Learning | Virtual Summit II | Moms Can: Code</title>
+
+
+    <!-- Bootstrap CSS -->
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      
+    <!-- Style CSS -->
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+      
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      
+  </head>
+<body>
+    
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container-fluid">
+      <div class="row">
+        <a class="navbar-brand js-scroll-trigger" href="index.html"><img class="logo" src="momscancode.jpg" alt ="moms can: code logo" /></a>
+      </div>
+    </div> 
+  <div class="container-fluid">
+    <div class="row">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="speakers.html">Speakers</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="schedule.html">Schedule</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://www.crowdcast.io/e/momscancodesummit2">Register</a></li>
+                <li><a class="btn btn-default social" href="https://twitter.com/MomsCanCodePgh"><i class="fa fa-twitter"></i></a></li>
+                <li><a  class="btn btn-default social" href="https://www.facebook.com/momscancode/">
+                <i class="fa fa-facebook"></i></a></li>
+                <li><a class="btn btn-default social" href="https://www.instagram.com/momscancode/">
+                <i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div> 
+   </div>
+  </div>
+</nav>
+    
+
+<div class="container-fluid">
+    <div class="speak1">
+        <h1 class="import space">Schedule of Events</h1> 
+        
+        
+        <div class="row">
+            <div class="col-xs-12 col-md-3"></div>
+            <div class="col-sx-12 col-md-6 working"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-3"></div>
+            <div class="col-xs-12 col-md-6">
+            <h2 class="dark">Come back soon for our full schedule!</h2></div>
+        </div>
+        <div class="btn-wrapper">
+            <p><a class="btn btn-lg btn-secondary signup" href="http://www.crowdcast.io/e/momscancodesummit2" role="button">Register Now &raquo;</a></p></div>
+            
+            
+        <div class="row">
+                <div class="col-12"><hr><br /></div>
+        </div>
+        
+                </div>
+            </div>
+
+    
+
+    
+<footer>
+        <h6 class="con">All Content &copy; Moms Can: Code. Full Terms & Conditions</h6>
+        <h6 class="con"><a href="mailto:hello@demarcode.com"></a></h6>
+    
+</footer> 
+    
+<script>
+    
+    $('.carousel').carousel({
+  interval: 2000
+})
+   
+    //jQuery is required to run this code
+$( document ).ready(function() {
+
+    scaleVideoContainer();
+
+    initBannerVideoSize('.video-container .poster img');
+    initBannerVideoSize('.video-container .filter');
+    initBannerVideoSize('.video-container video');
+
+    $(window).on('resize', function() {
+        scaleVideoContainer();
+        scaleBannerVideoSize('.video-container .poster img');
+        scaleBannerVideoSize('.video-container .filter');
+        scaleBannerVideoSize('.video-container video');
+    });
+
+});
+
+function scaleVideoContainer() {
+
+    var height = $(window).height() + 5;
+    var unitHeight = parseInt(height) + 'px';
+    $('.homepage-hero-module').css('height',unitHeight);
+
+}
+
+function initBannerVideoSize(element){
+
+    $(element).each(function(){
+        $(this).data('height', $(this).height());
+        $(this).data('width', $(this).width());
+    });
+
+    scaleBannerVideoSize(element);
+
+}
+
+function scaleBannerVideoSize(element){
+
+    var windowWidth = $(window).width(),
+    windowHeight = $(window).height() + 5,
+    videoWidth,
+    videoHeight;
+
+    // console.log(windowHeight);
+
+    $(element).each(function(){
+        var videoAspectRatio = $(this).data('height')/$(this).data('width');
+
+        $(this).width(windowWidth);
+
+        if(windowWidth < 1000){
+            videoHeight = windowHeight;
+            videoWidth = videoHeight / videoAspectRatio;
+            $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
+
+            $(this).width(videoWidth).height(videoHeight);
+        }
+
+        $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+
+    });
+}
+    
+</script>
+    
+</body>
+    
+</html>
